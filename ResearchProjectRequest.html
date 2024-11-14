@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #2c5282;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .main-content {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .left-column {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .right-column {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 12px;
+      display: block;
+    }
+    
+    .contact-info {
+      background-color: #f7fafc;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+    .skills-box {
+      background-color: #f7fafc;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9em;
+      margin-top: auto; /* This pushes the skills box to the bottom */
+    }
+    
+    .section {
+      margin-bottom: 25px;
+    }
+    
+    h1 {
+      color: #2c5282;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: #2d3748;
+      font-size: 18px;
+      border-left: 4px solid #2c5282;
+      padding-left: 10px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+    
+    .highlight {
+      background-color: #ebf4ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li.no-bullet {
+      padding-left: 0;
+    }
+
+    li:not(.no-bullet):before {
+      content: "•";
+      color: #2c5282;
+      position: absolute;
+      left: 0;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #718096;
+    }
+
+    .skills-list {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 5px;
+    }
+
+    .skill {
+      background-color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .academic-section, .professional-section {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header remains the same -->
+  <div class="header">
+    <h1>Master Thesis Research Project Proposal</h1>
+  </div>
+
+  <div class="main-content">
+    <div class="left-column">
+      <div class="contact-info">
+        <img src="ApplicationPicture.jpg" alt="Paula Dröghoff" class="profile-image">
+        <h2>Paula Dröghoff</h2>
+        <p>Location: London, UK</p>
+        <p>📧 pauladroghoff@gmail.com</p>
+        <p>📱 +491716726868</p>
+      </div>
+
+      <div class="skills-box">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+          <span class="skill">Python</span>
+          <span class="skill">R</span>
+          <span class="skill">SQL</span>
+          <span class="skill">PHP</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">CSS/HTML</span>
+          <span class="skill">Solidity</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="right-column">
+      <div class="academic-section">
+        <h2>Academic Background</h2>
+        <ul>
+          <li class="no-bullet">MSc Emerging Digital Technologies</li>
+          <li class="no-bullet">University College London (2024-2025)</li>
+          <li>Computer Science and its applications in industry</li>
+          <li>Focus: Software Engineering, Machine Learning, Data Science</li>
+          <li class="no-bullet">BSc MORSE (Mathematics, Operational Research, Statistics, Economics)</li>
+          <li class="no-bullet">University of Warwick (2019-2022)</li>
+          <li>Mathematical Analysis, Linear Algebra, Statistical Programming, Probability Measurement</li>
+          <li>Thesis: 'Can society have trust in Bitcoin? Trust establishment in blockchain-based technology'</li>
+        </ul>
+      </div>
+
+      <div class="professional-section">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>Program Manager at Gartner specializing in IT development leadership and technology strategy consulting</li>
+          <li>Graduate of Gartner's Leadership Program focused on data analytics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rest of the content remains the same -->
+  <div class="section">
+    <h2>Research Project Details</h2>
+    <p>Timeline: June-September 2025 (3 months)</p>
+    <p>Focus Areas: Machine Learning, Data Science, Software Engineering</p>
+    <div class="highlight">
+      <p>As part of my Master's dissertation at UCL, I am seeking an industry partnership for a research project in Computer Science. This collaboration offers the opportunity to conduct innovative research in areas such as Machine Learning, Data Science, or Software Engineering. The project will culminate in a comprehensive Master's dissertation that addresses real-world industry challenges while contributing to academic knowledge in the field.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Requirements from the Company</h2>
+    <ul>
+      <li>Definition of a research question aligned with company interests</li>
+      <li>Assignment of a supervisor to provide project guidance</li>
+      <li>Flexible arrangement of work location and contact hours based on company preference</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Benefits for the Company</h2>
+    <ul>
+      <li>Access to dedicated Master's-level research support at no cost</li>
+      <li>Full-time commitment throughout the project duration</li>
+      <li>Potential for extended collaboration beyond the initial timeline</li>
+      <li>Comprehensive research findings documented in Master's dissertation</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>Looking forward to discussing potential research collaboration opportunities!</p>
+  </div>
+</body>
+</html>
